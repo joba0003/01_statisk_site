@@ -12,5 +12,21 @@
 
 .container .category_list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+  list-style: none;
+  padding: 10px;
+  margin: 10px;
+}
+
+a {
+  background-color: pink;
+  border: 1px solid deeppink;
+  border-radius: 8px; /* Runde hjørner */
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  color: deeppink;
+  font-weight: bold;
+  display: block;
 }
