@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 20px;
+}
+
+.container .category_list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
