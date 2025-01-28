@@ -1,0 +1,32 @@
+.apparel img {
+  max-width: 300px;
+}
+
+.apparel {
+  padding: 20px;
+  background-color: pink;
+  max-width: 350px;
+  border: 1px solid;
+  border-color: deeppink;
+}
+
+.apparel:hover {
+  scale: 1.05;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 20px;
+  padding: 20px;
+}
+
+p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: deeppink;
+}
+
+.overskrift {
+  font-weight: bold;
+}

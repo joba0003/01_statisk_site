@@ -23,9 +23,12 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 16px;
-  list-style: none;
   padding: 30px;
   margin: 10px;
+}
+.container {
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 a {
