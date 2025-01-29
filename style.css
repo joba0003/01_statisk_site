@@ -1,24 +1,79 @@
 .apparel img {
-  max-width: 300px;
+  width: 100%;
 }
 
+.apparel_soldOut {
+  padding: 20px;
+  background-color: pink;
+  border: 1px solid;
+  border-color: deeppink;
+  width: 100%;
+  position: relative;
+}
+.apparel_soldOut img {
+  width: 100%;
+  opacity: 0.5;
+}
+.apparel_soldOut:hover {
+  scale: 1.05;
+}
+
+.apparel_soldOut::before {
+  content: "Sold Out";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000000;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 20px;
+  text-align: center;
+}
 .apparel {
   padding: 20px;
   background-color: pink;
-  max-width: 350px;
+  width: 100%;
   border: 1px solid;
   border-color: deeppink;
 }
-
+.apparel_onSale {
+  padding: 20px;
+  background-color: pink;
+  border: 1px solid;
+  border-color: deeppink;
+  width: 100%;
+}
+.apparel_onSale .discounted {
+  justify-content: space-between;
+}
+.apparel_onSale:hover {
+  scale: 1.05;
+}
+.apparel_onSale img {
+  width: 100%;
+}
+.discounted .percent {
+  color: deeppink;
+}
 .apparel:hover {
   scale: 1.05;
 }
 
-main {
+.produktliste {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin: 20px;
   padding: 20px;
+}
+.discounted p:last-child {
+  background-color: yellow;
+  padding: 0.2rem;
+  display: flex;
+}
+
+.produktliste .apparel_onSale .discounted {
+  display: flex;
 }
 
 p {
@@ -27,6 +82,44 @@ p {
   color: deeppink;
 }
 
+h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: deeppink;
+}
+h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: deeppink;
+}
+.overskrift_product {
+  font-size: 45px;
+}
+
 .overskrift {
   font-weight: bold;
+}
+
+.bluetee {
+  padding: 20px;
+}
+.text {
+  border: 1px solid;
+  border-color: deeppink;
+  background-color: pink;
+  padding: 20px;
+  margin: 20px;
+  line-height: 1.5;
+}
+.box_1 {
+  border: 1px solid;
+  border-color: deeppink;
+  background-color: pink;
+  padding: 20px;
+  margin: 20px;
+  line-height: 1.5;
+}
+.box_buy {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
