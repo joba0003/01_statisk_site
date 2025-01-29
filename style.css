@@ -18,7 +18,7 @@
   scale: 1.05;
 }
 
-.apparel_soldOut::before {
+/* .apparel_soldOut::before {
   content: "Sold Out";
   position: absolute;
   top: 50%;
@@ -29,21 +29,34 @@
   padding: 10px 20px;
   font-size: 20px;
   text-align: center;
-}
+} */
 .apparel {
   padding: 20px;
   background-color: pink;
   width: 100%;
   border: 1px solid;
   border-color: deeppink;
+  position: relative;
 }
-.apparel_onSale {
+.soldout {
+  place-self: center;
+  position: absolute;
+  color: pink;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: deeppink;
+  border: 1px solid;
+  border-color: pink;
+  padding: 0.5rem;
+}
+
+/* .apparel_onSale {
   padding: 20px;
   background-color: pink;
   border: 1px solid;
   border-color: deeppink;
   width: 100%;
-}
+} */
 .apparel_onSale .discounted {
   justify-content: space-between;
 }
