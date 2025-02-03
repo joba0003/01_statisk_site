@@ -163,6 +163,10 @@ main .container_product {
   grid-template-columns: 1fr 1fr;
 }
 
+.container {
+  margin-top: 100px;
+}
+
 @media (min-width: 1200px) {
   body .produktliste {
     width: auto;
