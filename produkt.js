@@ -1,11 +1,15 @@
-let productId = 1165;
+let productListContainer = document.querySelector(".container_product");
+const productId = new URLSearchParams(window.location.search).get("id");
+/* let productId = 1165;
 let container_product = document.querySelector(".container_product");
-
-fetch(`https://kea-alt-del.dk/t7/api/products/${productId}`)
+ */
+fetch(`https://kea-alt-del.dk/t7/api/products/${productListContainer.id}`)
   .then((response) => response.json())
   .then((data) => {
     console.log(data);
-    container_product.innerHTML = `
+    const markup = data
+      .map(
+        `
 <div class="bluetee">
 <img
   src="https://kea-alt-del.dk/t7/images/webp/640/${data.id}.webp"
@@ -36,5 +40,11 @@ ${data.brandname} - ${data.productdisplayname}</h1>
    <h2>Price</h2>
 <p>${data.price}</p>
 </div>
-</div> `;
+</div> `
+      )
+      .join("");
+    productListContainer.innerHTML = markup;
   });
+
+/* class=`saleLabel ${data.soldout && "soldout"}` */
+/* class = `bluetee ${data.discount ? "onSale" : ""}` */
