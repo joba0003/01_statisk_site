@@ -20,7 +20,7 @@
 }
 .container .category_list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 16px;
   padding: 20px;
 }
@@ -171,6 +171,10 @@ main .container_product {
     font-size: 30px;
   }
 
+  .container .category_list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
   main .container_product {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -184,4 +188,8 @@ main .container_product {
   .box_buy {
     grid-template-columns: 1fr;
   }
+}
+
+.apparel_onsale {
+  visibility: visible;
 }

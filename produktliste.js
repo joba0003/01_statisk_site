@@ -17,7 +17,7 @@ function showList(products) {
         <p class="overskrift">${product.productdisplayname}</p>
         <p>${product.articletype} | ${product.brandname}</p>
         <p>DKK ${product.price},-</p>
-        ${product.discount ? `<div class="discounted"><p>NOW DKK ${product.discount},-</p><p class="percent">-${product.discountpercent}%</p></div>` : ""}
+        ${product.discount ? `<div class="discounted"><p>NOW DKK ${product.price},-</p><p class="percent">-${product.discount}%</p></div>` : ""}
         <a href="produkt.html?id=${product.id}">Read More</a>
       </div>`
     )

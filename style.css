@@ -30,8 +30,7 @@
   place-self: center;
   position: absolute;
   color: pink;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   background-color: deeppink;
   border: 1px solid;
   border-color: pink;
@@ -41,6 +40,19 @@
 .apparel_onSale .discounted {
   justify-content: space-between;
 }
+
+/* .apparel_onSale {
+  border: 2px solid gold;
+}
+.discounted {
+  display: flex;
+  justify-content: space-between;
+}
+.discounted .percent {
+  background-color: yellow;
+  padding: 5px;
+  font-weight: bold; */
+
 .apparel_onSale:hover {
   scale: 1.05;
 }
@@ -65,19 +77,16 @@
 }
 
 p {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: deeppink;
 }
 
 h1 {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: deeppink;
 }
 h2 {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: deeppink;
 }
 .overskrift_product {
