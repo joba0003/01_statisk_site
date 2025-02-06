@@ -4,9 +4,9 @@
 
 .apparel_soldOut {
   padding: 20px;
-  background-color: pink;
+  background-color: rgb(84, 133, 10);
   border: 1px solid;
-  border-color: deeppink;
+  border-color: green;
   width: 100%;
   position: relative;
 }
@@ -20,20 +20,20 @@
 
 .apparel {
   padding: 20px;
-  background-color: pink;
+  background-color: rgb(84, 133, 10);
   width: 100%;
   border: 1px solid;
-  border-color: deeppink;
+  border-color: green;
   position: relative;
 }
 .soldout {
   place-self: center;
   position: absolute;
-  color: pink;
+  color: yellowgreen;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  background-color: deeppink;
+  background-color: green;
   border: 1px solid;
-  border-color: pink;
+  border-color: green;
   padding: 0.5rem;
 }
 
@@ -60,7 +60,7 @@
   width: 100%;
 }
 .discounted .percent {
-  color: deeppink;
+  color: green;
 }
 .apparel:hover {
   scale: 1.05;
@@ -78,19 +78,16 @@
 
 p {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: deeppink;
+  color: darkblue;
 }
 
 h1 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: deeppink;
+  color: darkblue;
 }
 h2 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: deeppink;
-}
-.overskrift_product {
-  font-size: 45px;
+  color: darkblue;
 }
 
 .overskrift {
@@ -102,16 +99,16 @@ h2 {
 }
 .text {
   border: 1px solid;
-  border-color: deeppink;
-  background-color: pink;
+  border-color: green;
+  background-color: greenyellow;
   padding: 20px;
   margin: 20px;
   line-height: 1.5;
 }
 .box_1 {
   border: 1px solid;
-  border-color: deeppink;
-  background-color: pink;
+  border-color: green;
+  background-color: rgb(84, 133, 10);
   padding: 20px;
   margin: 20px;
   line-height: 1.5;
@@ -119,8 +116,4 @@ h2 {
 .box_buy {
   display: grid;
   grid-template-columns: 1fr 1fr;
-}
-
-#mySelect {
-  font-size: 32px;
 }

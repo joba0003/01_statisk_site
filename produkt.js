@@ -1,12 +1,13 @@
-let productListContainer = document.querySelector(".container_product");
+let main = document.querySelector("main");
 const productId = new URLSearchParams(window.location.search).get("id");
 
 fetch(`https://kea-alt-del.dk/t7/api/products/${productId}`)
   .then((response) => response.json())
   .then((data) => {
-    console.log(data);
+    console.log("mine data er: ", data);
 
     const markup = `
+    <div class="container_product">
       <div class="bluetee ${data.discount ? "discounted" : ""}">
         ${data.soldout ? '<div class="soldout">Sold Out</div>' : ""}
         <img src="https://kea-alt-del.dk/t7/images/webp/640/${data.id}.webp" alt="${data.productdisplayname}" />
@@ -32,13 +33,14 @@ fetch(`https://kea-alt-del.dk/t7/api/products/${productId}`)
             <option>XL</option>
           </select>
           <h2>Price</h2>
-          <p>discount ${data.discount}%</p>
+          <p class="discount ${data.discount ? "synlig" : ""}">discount ${data.discount}%</p>
           <p>DKK ${data.price},-</p>
           
         </div>
+      </div>
       </div>`;
 
-    productListContainer.innerHTML = markup;
+    main.innerHTML = markup;
   });
 
 /* let productListContainer = document.querySelector(".container_product");
