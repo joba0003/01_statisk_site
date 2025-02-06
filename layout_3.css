@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.discount {
+  visibility: hidden;
+}
+.synlig {
+  visibility: visible;
+}
+.img {
+  width: 100%;
+  height: auto;
+}
+header .logo a {
+  background-color: greenyellow;
+  padding: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border-radius: 8px;
+}
+.menu a {
+  background-color: greenyellow;
+  border-radius: 8px;
+}
+
+/* menu */
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  align-items: center;
+  z-index: 10;
+  padding: 25px;
+  background-color: rgb(14, 94, 44);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: green;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+  border: 1px solid;
+}
+.logo a {
+  border: 1px solid;
+  color: green;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.menu a:hover {
+  color: darkblue;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: green;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+
+/* burger menu */
+@media screen and (max-width: 1200px) {
+  .menu {
+    display: none;
+    z-index: 10;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: rgb(84, 133, 10);
+    position: absolute;
+    top: 94px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+}
+
+/* buttons frontpage mobilefirst */
+
+.container p {
+  color: green;
+  font-family: fantasy;
+  font-size: 45px;
+  padding: 20px;
+  text-align: center;
+}
+.circle {
+  width: 1000px;
+  height: 1000px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #065f21 0%, #47bd5b 50%, #61b192 100%);
+  z-index: -1;
+  position: fixed;
+}
+.container .category_list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding: 20px;
+}
+.container .category_list a {
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  display: flex; /* Aktiver flexbox */
+  justify-content: center; /* Centrer tekst vandret */
+  align-items: center;
+  height: 80px;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: 1px solid;
+  color: greenyellow;
+  background-color: rgb(84, 133, 10);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+body .produktliste {
+  width: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+main .container_product {
+  display: inline;
+}
+
+.box_buy {
+  grid-template-columns: 1fr 1fr;
+}
+
+.container {
+  margin-top: 100px;
+}
+
+.apparel a {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: darkblue;
+}
+
+@media (min-width: 1200px) {
+  body .produktliste {
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 30px;
+  }
+
+  .container .category_list {
+    grid-template-columns: 1fr 1fr 1fr;
+    align-self: center;
+  }
+
+  main .container_product {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .box_buy {
+    grid-template-columns: 1fr;
+  }
+}
