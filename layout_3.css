@@ -16,14 +16,9 @@
   height: auto;
 }
 header .logo a {
-  background-color: greenyellow;
   padding: 10px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  border-radius: 8px;
-}
-.menu a {
-  background-color: greenyellow;
-  border-radius: 8px;
+  font-family: "Manrope";
+  font-size: 30px;
 }
 
 /* menu */
@@ -32,11 +27,14 @@ header {
   top: 0;
   display: flex;
   justify-content: space-between;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  align-items: center;
+  font-family: "Manrope", sans-serif;
   z-index: 10;
   padding: 25px;
-  background-color: rgb(14, 94, 44);
+  background-color: linear-gradient(
+    to bottom,
+    rgba(52, 101, 121, 0.8),
+    rgba(70, 104, 119, 0.8)
+  );
 }
 
 nav {
@@ -61,21 +59,15 @@ nav {
 .menu a {
   display: block;
   padding: 10px;
-  color: green;
+  color: rgb(52, 101, 121);
   text-decoration: none;
   transition: color 0.3s;
   text-align: end;
-  border: 1px solid;
 }
 .logo a {
-  border: 1px solid;
-  color: green;
+  color: rgb(52, 101, 121);
   text-decoration: none;
   padding: 10px;
-}
-
-.menu a:hover {
-  color: darkblue;
 }
 
 .burger {
@@ -87,7 +79,7 @@ nav {
 .burger .line {
   width: 100%;
   height: 2px;
-  background-color: green;
+  background-color: rgb(52, 101, 121);
   margin-bottom: 5px;
   transition: 0.2s linear;
 }
@@ -121,12 +113,10 @@ nav {
 
   nav.active .menu {
     display: block;
-    background-color: rgb(84, 133, 10);
     position: absolute;
     top: 94px;
     left: 0;
     width: 100%;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     z-index: 1;
   }
 
@@ -139,27 +129,23 @@ nav {
   }
 }
 
-/* buttons frontpage mobilefirst */
-
+body {
+  background-image: url(background_index.jpg);
+  background-repeat: repeat-y;
+  background-color: #007bff;
+}
 .container p {
-  color: green;
-  font-family: fantasy;
+  color: rgb(52, 101, 121);
+  font-family: "manrope", sans-serif;
   font-size: 45px;
   padding: 20px;
   text-align: center;
 }
-.circle {
-  width: 1000px;
-  height: 1000px;
-  border-radius: 50%;
-  background: radial-gradient(circle, #065f21 0%, #47bd5b 50%, #61b192 100%);
-  z-index: -1;
-  position: fixed;
-}
+
 .container .category_list {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 16px;
   padding: 20px;
 }
@@ -174,10 +160,10 @@ nav {
   font-size: 24px;
   font-weight: bold;
   border-radius: 8px;
-  border: 1px solid;
-  color: greenyellow;
-  background-color: rgb(84, 133, 10);
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(52, 101, 121);
+  background-color: rgb(168, 181, 117);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 body .produktliste {
   width: auto;
@@ -197,11 +183,17 @@ main .container_product {
 }
 
 .apparel a {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: darkblue;
+  font-family: "Manrope", sans-serif;
+  font-size: 24px;
+  text-decoration: none;
 }
 
-@media (min-width: 1200px) {
+.apparel a:hover {
+  color: rgb(52, 101, 121);
+  text-decoration: underline;
+}
+
+@media (min-width: 900px) {
   body .produktliste {
     grid-template-columns: 1fr 1fr 1fr;
     font-size: 30px;
